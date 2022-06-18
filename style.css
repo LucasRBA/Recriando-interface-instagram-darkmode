@@ -4,7 +4,8 @@
     box-sizing: border-box;
     text-decoration: none;
     font-family: sans-serif;
-    font-size: 14px;
+    font-size: 14px; 
+    background-color: rgb(30, 30, 30);
   }
   
   body {
@@ -15,9 +16,11 @@
     padding: 0;
     display: flex;
     justify-content: center;
+    background-color: rgb(30, 30, 30);
   }
   
   .instagram-wrapper {
+    background-color: ;
     display: flex;
     align-items: center;
     justify-content: start;
@@ -44,27 +47,38 @@
     flex-direction: column;
     width: 50%;
     min-height: 34rem;
+    
 }
   .group {
       display: flex;
       justify-content: space-between;
       align-items: center;
       flex-direction: column;
-      background-color: #ffffff;
+      background-color: rgb(45, 45, 45);
       width: 100%;
       padding: 1.3rem 0;
+      border-radius: 2%;
       border: 1px solid lightgray;
 }
 
+#change-account{
+  margin-top: 4%;
+  border-radius: 3%; 
+  background-color: rgb(45, 45, 45);
+}
+
 .group:nth-child(1) {
-  min-height: 19rem;
+  min-height: 20rem;
 }
 
 .instagram-logo {
+  background-color: rgb(45, 45, 45);
   height: 3rem;
-
 }
+
+
 .profile-photo{
+  margin-top: 2%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -72,11 +86,43 @@
   overflow:hidden
 }
 
+.user {
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  background-color: rgb(45, 45, 45);
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+}
+#user {
+  background-color: rgb(52, 52, 52);
+  border-radius: 4px;
+  color: #ffffff; 
+  min-width: 200px;
+  height: 30px;
+}
+
+.password{
+  margin-top: 2%;
+  background-color: rgb(52, 52, 52);
+  margin-bottom: 5%;
+}
+
+#password {
+  background-color: rgb(52, 52, 52);
+  border-radius: 4px;
+  color: #ffffff;
+  min-width: 200px;
+  height: 30px;
+}
+
 .profile-photo img {
   height: 6rem;
 }
 
 .instagram-login{
+  margin-bottom: 1%;
   background-color: #0095f6;
   color: #ffffff;
   padding: 8px;
@@ -84,19 +130,28 @@
 }
 
 .instagram-logout{
+  margin-top: 2%;
+  background-color: rgb(45, 45, 45);
   color: #0095f6;
-  margin-top: 1rem;
   }
 
   .not-account {
-    color:rgb(160, 160, 160)
+    background-color: rgb(45, 45, 45);
+    color: #e3e3e3;
   }
 
   .link-blue {
+    background-color: rgb(45, 45, 45);
     color: #0095f6;
+    margin-top: 8%;
+}
+
+.get-app {
+  color: #e3e3e3;
 }
 
 .get-the-app {
+  margin-top: 2%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -114,17 +169,18 @@
 }
 
 .app-download {
-  height: 3rem;
-  width: 10rem;
+  margin-top: 4%;
+  height: 40.5px;
+  width: 136px;
   background-size: cover;
 }
 
 .app-download:nth-child(1) {
-  background-image: url("./apple-store-button.png");
+  background-image: url("./img/apple-store-button.png");
 }
 
 .app-download:nth-child(2) {
-  background-image: url("./google-play-button.png");
+  background-image: url("./img/google-play-button.png");
 }
 
 /* media queries */
